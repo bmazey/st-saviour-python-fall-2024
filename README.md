@@ -1,6 +1,6 @@
-# st-saviour-python-fall-2024
-St. Saviour High School 
+# Python Fall 2024
+✝️ St. Saviour High School 👩‍🎓 
 
-AP Computer Science: Principles
+🧙 AP Computer Science: Principles 🐍
 
-Fall 2024
+🍁 Fall 2024 🍂
