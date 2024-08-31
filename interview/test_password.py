@@ -2,12 +2,14 @@ from password import generate_password
 
 
 def test_password_length():
+    # total length of password should be 10
     assert len(generate_password()) == 10
 
 def test_password_alpha_characters():
     # generate password for testing purposes
     password = generate_password()
 
+    # first 5 characters should be letters
     assert password[0].isalpha()
     assert password[1].isalpha()
     assert password[2].isalpha()
@@ -18,6 +20,7 @@ def test_password_numberic_characters():
     # generate password for testing purposes
     password = generate_password()
 
+    # next four characters should be digits
     assert password[5].isdigit()
     assert password[6].isdigit()
     assert password[7].isdigit()
@@ -27,6 +30,7 @@ def test_password_symbol_character():
     # generate password for testing purposes
     password = generate_password()
 
+    # last character should be a symbol
     assert contains(password[len(password) - 1], "!@#$%^&*")
 
 def test_password_unique():
