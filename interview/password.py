@@ -11,6 +11,9 @@ def generate_password() -> str:
         - it's relatively uncommon to generate the same password twice 
     """
 
+    # HINT you will require the use of a random number generator for this function
+    # https://docs.python.org/3/library/random.html#random.randint
+    
     # TODO implement generate_password function
     
     return ''
