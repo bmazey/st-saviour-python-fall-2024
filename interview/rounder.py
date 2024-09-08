@@ -2,7 +2,7 @@
 
 def round(number: float) -> int:
     """
-    round accepts a float and returns a rounded integer.
+    round() accepts a float and returns a rounded integer.
     the number is rounded up iff the decimal is >= .5
     """
 
