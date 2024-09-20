@@ -16,4 +16,6 @@ def generate_password() -> str:
 
     # TODO implement generate_password function
     
+    a = random.randint(0, 9)
+    
     return ''

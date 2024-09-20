@@ -8,5 +8,33 @@ def monthly_holiday(month: str) -> str:
     """
 
     # TODO implement monthly_holiday function
+    
+    
+    if month == "January":
+        return "New Year's Day"
+    elif month == "February":
+        return "Valentine's Day"
+    elif month == "March":
+        return "St. Patrick's Day"
+    elif month == "April":
+        return "April Fool's Day"
+    elif month == "May":
+        return "Memorial Day"
+    elif month == "June":
+        return "Juneteenth"
+    elif month == "July":
+        return "Independence Day"
+    elif month == "August":
+        return "International Youth Day"
+    elif month == "September":
+        return "Labor Day"
+    elif month == "October":
+        return "Halloween"
+    elif month == "November":
+        return "Thanksgiving"
+    elif month == "December":
+        return "Christmas"
+    else:
+        return ""
+    
 
-    return ''
