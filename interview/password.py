@@ -15,5 +15,5 @@ def generate_password() -> str:
     # https://docs.python.org/3/library/random.html#random.randint
 
     # TODO implement generate_password function
-    
+
     return ''
