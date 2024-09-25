@@ -15,5 +15,16 @@ def generate_password() -> str:
     # https://docs.python.org/3/library/random.html#random.randint
 
     # TODO implement generate_password function
+    import random 
+    alphabet = 'a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z '
+    r = alphabet  [ random.randit  (a,len(alphabet) - 1) ]
+    password = alphabet [r]
+    print ('random alphabet r '+ str(r))
+    print ('random password'+1 )
+    
+    
+ 
+
+
     
     return ''

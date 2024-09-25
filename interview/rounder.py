@@ -7,5 +7,12 @@ def round(number: float) -> int:
     """
 
     # TODO implement round function
+    
+    if number % 1 ==0:
+       return number
+    if number % 1 <=0.4:
+        return int (number)
+    if number % 1 >=0.5:
+        return int (number) + 1 
 
     return 0
