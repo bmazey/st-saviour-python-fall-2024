@@ -1,4 +1,4 @@
-
+import random
 
 def generate_password() -> str:
     """
@@ -16,6 +16,10 @@ def generate_password() -> str:
 
     # TODO implement generate_password function
     
-    a = random.randint(0, 9)
-    
-    return ''
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    digits = '012356789'
+    symbols = '!@#$%^&*'
+    l = alphabet[random.randint(0,len(alphabet)-1)]
+    n = digits[random.randint(0,len(digits)-1)]
+    s = symbols[random.randint(0,len(symbols)-1)]
+    return l+l+l+l+l+n+n+n+n+s
