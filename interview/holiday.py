@@ -9,7 +9,7 @@ def monthly_holiday(month: str) -> str:
 
     # TODO implement monthly_holiday function
     
-    
+    # returns a specific holiday based on a given month
     if month == "January":
         return "New Year's Day"
     elif month == "February":
@@ -34,7 +34,7 @@ def monthly_holiday(month: str) -> str:
         return "Thanksgiving"
     elif month == "December":
         return "Christmas"
+        
+    # returns an empty string if the given month doesn't exist
     else:
         return ""
-    
-

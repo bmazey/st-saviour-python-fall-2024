@@ -12,13 +12,19 @@ def seven_eleven(number: int) -> str:
     # TODO implement seven_eleven function
     # Check to see if the given number is a multiple of 7
 
-    # Returns "seveneleven" if number
+    # returns "seveneleven" if number is a multiple of both 7 & 11
     if number % 7 == 0 and number % 11 == 0: 
         return "seveneleven"
+        
+    # returns "seven" if number is a multiple of 7
     elif number % 7 == 0:
         return "seven"
+   
+    # returns "eleven" if number is a multiple of 11
     elif number % 11 == 0:
         return "eleven"
+    
+    # returns empty string if number isn't a multiple of 7 nor 11
     return ''
 
  

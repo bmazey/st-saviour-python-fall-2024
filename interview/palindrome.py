@@ -1,6 +1,6 @@
 
 
-def is_palindrome(word: str) -> str:
+def is_palindrome(word: str) -> bool:
     """
     is_palindrome() accepts a string as input and returns:
         - True if the provided word is a palindrome
@@ -9,4 +9,5 @@ def is_palindrome(word: str) -> str:
 
     # TODO implement is_palindrome function
     
-    return True
+    # use an increment of -1 to return the string backwards
+    return word == word[::-1]
