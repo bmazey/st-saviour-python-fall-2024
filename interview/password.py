@@ -1,4 +1,4 @@
-
+import random
 
 def generate_password() -> str:
     """
@@ -16,4 +16,15 @@ def generate_password() -> str:
 
     # TODO implement generate_password function
     
-    return ''
+    # create variables to represent the lists of characters
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    digits = '012356789'
+    symbols = '!@#$%^&*'
+
+    # use aforementioned lists to create random number, letter, and symbol generators
+    l = alphabet[random.randint(0,len(alphabet)-1)]
+    n = digits[random.randint(0,len(digits)-1)]
+    s = symbols[random.randint(0,len(symbols)-1)]
+
+    # concatenate the random characters into a ten character password
+    return l+l+l+l+l+n+n+n+n+s

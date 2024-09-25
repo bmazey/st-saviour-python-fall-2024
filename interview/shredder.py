@@ -1,4 +1,4 @@
-
+import random
 
 def shred_first_character(word: str) -> str:
     """
@@ -8,7 +8,8 @@ def shred_first_character(word: str) -> str:
 
     # TODO implement shred_first_character function
 
-    return ''
+    # returns the word without the first character
+    return word[1::1]
 
 def shred_last_character(word: str) -> str:
     """
@@ -18,4 +19,5 @@ def shred_last_character(word: str) -> str:
 
     # TODO implement shred_last_character function
     
-    return ''
+    # returns the word without the last character
+    return word[:len(word)-1:]
