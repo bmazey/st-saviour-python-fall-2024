@@ -8,6 +8,7 @@ def monthly_holiday(month: str) -> str:
     """
 
     # TODO implement monthly_holiday function
+    # copy and paste the instructions, check the spelling
     if month == 'January':
         return 'New Year\'s Day'
     if month == 'February':

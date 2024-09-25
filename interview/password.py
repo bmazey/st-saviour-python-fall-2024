@@ -19,6 +19,7 @@ def generate_password() -> str:
 
     password = ''
 
+    # pull 5 random letters
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     r = alphabet[random.randint(0, len(alphabet) - 1)]
     password += r
@@ -27,6 +28,7 @@ def generate_password() -> str:
     password += r
     password += r
     
+    # pull 4 random digits
     digit = '0123456789'
     r = digit[random.randint(0, len(digit)-1)]
     password += r
@@ -34,6 +36,7 @@ def generate_password() -> str:
     password += r
     password += r
 
+    #pull only 1 random symbol
     symbol = '!@#$%^&*'
     r = symbol[random.randint(0, len(symbol)-1)]
     password += r
