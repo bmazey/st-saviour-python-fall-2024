@@ -16,4 +16,4 @@ def generate_password() -> str:
 
     # TODO implement generate_password function
     
-    return ''
+    
