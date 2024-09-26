@@ -10,5 +10,11 @@ def seven_eleven(number: int) -> str:
     """
 
     # TODO implement seven_eleven function
-
+    # know that should run % 11 and 7 first because 77 is fill out both
+    if number % 11 == 0 and number % 7 == 0:
+        return 'seveneleven'
+    if number % 7 == 0:
+        return 'seven'
+    if number % 11 == 0:
+        return 'eleven' 
     return ''
