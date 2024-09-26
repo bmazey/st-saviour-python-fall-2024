@@ -35,7 +35,7 @@ def generate_password() -> str:
     password += r
 
     symbol = '!@#$%^&*'
-    r = symbol[random.randint(0,len(digit)-1)]
+    r = symbol[random.randint(0,len(symbol)-1)]
     password += r
     
     return password
