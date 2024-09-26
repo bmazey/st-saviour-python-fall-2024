@@ -7,7 +7,7 @@ def round(number: float) -> int:
     """
 
     # TODO implement round function
-    #know that the fianl result should ne an interger
+    # know that the fianl result should ne an interger
     if number % 1 ==0:
        return number
     if number % 1 <=0.4:

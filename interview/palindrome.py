@@ -8,5 +8,5 @@ def is_palindrome(word: str) -> bool:
     """
 
     # TODO implement is_palindrome function
-    #the direction 
+    # the direction 
     return word == word[::-1]
