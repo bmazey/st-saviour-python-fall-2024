@@ -7,6 +7,8 @@ def shred_first_character(word: str) -> str:
     """
 
     # TODO implement shred_first_character function
+    
+    return word[1::]
 
     return ''
 
@@ -18,4 +20,5 @@ def shred_last_character(word: str) -> str:
 
     # TODO implement shred_last_character function
     
+    return word [:len(word) - 1:1]
     return ''
