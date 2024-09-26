@@ -8,4 +8,8 @@ def round(number: float) -> int:
 
     # TODO implement round function
 
-    return 0
+    remainder = number % 1 
+    if remainder % 1 >= 0.5:
+        return int (number) + 1
+    return int(number)
+  
