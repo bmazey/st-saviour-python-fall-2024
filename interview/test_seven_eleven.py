@@ -5,7 +5,7 @@ def test_seven_eleven():
     # should return empty string when not a multiple of either
     assert seven_eleven(3) == ''
     assert seven_eleven(5) == ''
-
+                  
     # should return 'seven' when a multiple of 7
     assert seven_eleven(7) == 'seven'
     assert seven_eleven(14) == 'seven'
