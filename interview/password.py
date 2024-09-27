@@ -1,4 +1,4 @@
-
+import random
 
 def generate_password() -> str:
     """
@@ -15,5 +15,25 @@ def generate_password() -> str:
     # https://docs.python.org/3/library/random.html#random.randint
 
     # TODO implement generate_password function
-    
-    return ''
+    # to make a random password, it is crucial to adjust the length
+    # random.randint and len will do that exactly
+
+    password = ''
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    digits = '0123456789'
+    symbols = '!@#$%^&*'
+
+    password += alphabet[random.randint(0, len(alphabet) - 1)]
+    password += alphabet[random.randint(0, len(alphabet) - 1)]
+    password += alphabet[random.randint(0, len(alphabet) - 1)]
+    password += alphabet[random.randint(0, len(alphabet) - 1)]
+    password += alphabet[random.randint(0, len(alphabet) - 1)]
+
+    password += digits[random.randint(0, len(digits) - 1)]
+    password += digits[random.randint(0, len(digits) - 1)]
+    password += digits[random.randint(0, len(digits) - 1)]
+    password += digits[random.randint(0, len(digits) - 1)]
+
+    password += symbols[random.randint (0, len(symbols) - 1)]
+
+    return password
