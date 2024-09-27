@@ -2,7 +2,7 @@
 
 def generate_password() -> str:
     """
-    generate_password takes no arguments and produces a string
+    generate_password() takes no arguments and produces a string
     which meets the following password complexity requirements:
         - the length of the password is 10
         - the first 5 characters are lower case letters
@@ -13,7 +13,45 @@ def generate_password() -> str:
 
     # HINT you will require the use of a random number generator for this function
     # https://docs.python.org/3/library/random.html#random.randint
-    
+
     # TODO implement generate_password function
-    
+    import random 
+
+    password = ''
+
+    # relationship between random and randit 
+    alphabet = 'abcdefghijklmkopqrstuvwxyz'
+    r= alphabet[random.randint(0, len(alphabet) -1)]
+    password += r
+    password += r
+    password += r
+    password += r
+    password += r
+
+    # pull 4 random dights 
+    digit = '0123456789'
+    r = digit[random.randint(0, len(digit)-1)]
+    password += r
+    password += r
+    password += r
+    password += r
+
+    #only need one symbol 
+    symbol = '!@#%^&*'
+    r = symbol [random.randint(0, len(symbol)-1)]
+    password += r
+
+    return password
+
+
+
+
+
+
+
     return ''
+
+    
+
+
+
