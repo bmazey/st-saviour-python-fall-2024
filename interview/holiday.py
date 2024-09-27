@@ -6,7 +6,8 @@ def monthly_holiday(month: str) -> str:
         - an empty string if the provided month is not valid
         - the correctly formatted holiday string for a given month (see test_holiday.py)
     """
-
+    # month is the cast operator to process the name of the months
+    # the return allows you to imput the holiday of that month!
     # TODO implement monthly_holiday function
     if month == "January":
         return "New Year's Day"
