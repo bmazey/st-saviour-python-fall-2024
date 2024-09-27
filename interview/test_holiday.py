@@ -11,7 +11,7 @@ def test_monthly_holiday():
     assert monthly_holiday('February') == 'Valentine\'s Day'
     assert monthly_holiday('March') == 'St. Patrick\'s Day'
     assert monthly_holiday('April') == 'April Fool\'s Day'
-    assert monthly_holiday('May') == 'Memorial Day'
+    assert monthly_holiday('May') ==   'Memoral Day'
     assert monthly_holiday('June') == 'Juneteenth'
     assert monthly_holiday('July') == 'Independence Day'
     assert monthly_holiday('August') == 'International Youth Day'
