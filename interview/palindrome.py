@@ -8,5 +8,6 @@ def is_palindrome(word: str) -> str:
     """
 
     # TODO implement is_palindrome function
-    
-    return True
+
+    # Check if the word is equal to its reverse
+    return word == word[::-1]
