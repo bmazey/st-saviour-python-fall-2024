@@ -1,6 +1,7 @@
 {
     "python.testing.pytestArgs": [
-        "interview"
+        "interview",
+        "factor"
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true
