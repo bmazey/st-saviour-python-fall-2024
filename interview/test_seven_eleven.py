@@ -1,6 +1,5 @@
 from seven_eleven import seven_eleven
 
-
 def test_seven_eleven():
     # should return empty string when not a multiple of either
     assert seven_eleven(3) == ''

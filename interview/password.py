@@ -16,4 +16,29 @@ def generate_password() -> str:
 
     # TODO implement generate_password function
     
-    return ''
+    import random
+
+    password = ''
+
+    # arrays
+    alphabetLower = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+    numbers = ['0','1','2','3','4','5','6','7','8','9']
+    symbols = ['!','@','#','$','%','^','&','*']
+
+    # alphabetical
+    password += alphabetLower[random.randint(0,len(alphabetLower)-1)]
+    password += alphabetLower[random.randint(0,len(alphabetLower)-1)]
+    password += alphabetLower[random.randint(0,len(alphabetLower)-1)]
+    password += alphabetLower[random.randint(0,len(alphabetLower)-1)]
+    password += alphabetLower[random.randint(0,len(alphabetLower)-1)]
+
+    # numbers NUMBERS numbeRS NUMbers
+    password += numbers[random.randint(0,len(numbers)-1)]
+    password += numbers[random.randint(0,len(numbers)-1)]
+    password += numbers[random.randint(0,len(numbers)-1)]
+    password += numbers[random.randint(0,len(numbers)-1)]
+
+    # symbol
+    password += symbols[random.randint(0,len(symbols)-1)]
+
+    return password
