@@ -42,7 +42,6 @@ def evens_only(numbers: list[int]) -> list[int]:
     # TODO implement
     return []
 
-
 # last_of_four_digits() accepts a list of four-digit integers and returns a new
 # list containing only the last digit of each number in the original sequence.
 # ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
