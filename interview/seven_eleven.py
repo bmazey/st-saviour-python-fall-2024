@@ -10,13 +10,13 @@ def seven_eleven(number: int) -> str:
     """
 
     # TODO implement seven_eleven function
-
+    
     if number % 7 == 0 and number % 11 == 0:
         return 'seveneleven'
-
-    if number % 7 == 0:
-        return 'seven'
     
+    if number % 7 == 0:
+        return 'seven'   
+   
     if number % 11 == 0:
         return 'eleven'
     
