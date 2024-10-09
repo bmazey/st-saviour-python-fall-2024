@@ -1,4 +1,4 @@
-
+import random
 
 def generate_password() -> str:
     """
@@ -17,3 +17,11 @@ def generate_password() -> str:
     # TODO implement generate_password function
     
     return ''
+    dog = 'abcdefghijklmnopqrstuvwxyz'
+    cat = '0123456789' 
+    rat = '!@#$%^&'
+    letters = dog[random.randint(0,len(dog) - 1 )]
+    numbers = cat[random.randint(0,len(cat) - 1 )]
+    symbols = rat[random.randint(0,len(rat) - 1 )]
+
+return letters + letter + letters + letters 
