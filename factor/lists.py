@@ -3,6 +3,11 @@
 # ex: [0, 2, -1, 15] -> 16
 def summation(numbers: list[int]) -> int:
     # TODO implement
+    sum = 0
+    for number in numbers:
+        sum += number
+    return sum
+        
     return 0
 
 # find_negative() accepts a list of integers containing one negative number
@@ -11,6 +16,9 @@ def summation(numbers: list[int]) -> int:
 # ex: [11, 13, -1, 0, 9] -> 2
 def find_negative(numbers: list[int]) -> int:
     # TODO implement
+    for index in range(len(numbers)) :
+        if numbers [index] < 0 :
+           return index    
     return 0
 
 # remove() accepts a list of integers and an int n. The method removes *all instances*
@@ -18,7 +26,17 @@ def find_negative(numbers: list[int]) -> int:
 # ex: [0, 1, 1, 2, 2, 3], n = 2 -> [0, 1, 1, 3]
 def remove(numbers: list[int], n: int) -> list[int]:
     # TODO implement
-    return []
+    index = 0 
+    while index < len(numbers):
+        if index in numbers != n:
+         return numbers.pop(index)
+    return 0
+
+
+
+
+
+        
 
 # merge() accepts two *pre-sorted* lists of integers and returns a new *sorted* list.
 # WARNING do not assume lists are of equal length!
