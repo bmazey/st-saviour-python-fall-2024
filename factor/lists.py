@@ -3,7 +3,10 @@
 # ex: [0, 2, -1, 15] -> 16
 def summation(numbers: list[int]) -> int:
     # TODO implement
-    return 0
+    sum=0 
+    for number in numbers:
+         sum += number
+    return sum
 
 # find_negative() accepts a list of integers containing one negative number
 # and returns the *position* of the negative number. You may safely assume
@@ -11,7 +14,9 @@ def summation(numbers: list[int]) -> int:
 # ex: [11, 13, -1, 0, 9] -> 2
 def find_negative(numbers: list[int]) -> int:
     # TODO implement
-    return 0
+    for index in range (len(numbers)):
+    if numbers [index] < 0 :
+     return index
 
 # remove() accepts a list of integers and an int n. The method removes *all instances*
 # of n from the provided list and returns a new list with no instances of n.
@@ -47,4 +52,7 @@ def evens_only(numbers: list[int]) -> list[int]:
 # ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
 def last_of_four_digits(numbers: list[int]) -> list[int]:
     # TODO implement
-    return []
+    result = []
+    for number in numbers:
+        result.append (number % 10)
+    return result
