@@ -26,17 +26,17 @@ def find_negative(numbers: list[int]) -> int:
 # ex: [0, 1, 1, 2, 2, 3], n = 2 -> [0, 1, 1, 3]
 def remove(numbers: list[int], n: int) -> list[int]:
     # TODO implement
-    index = 0 
-    while index < len(numbers):
-        if index in numbers != n:
-         return numbers.pop(index)
-    return 0
+    # result = []
+    # for number in numbers:
+    #     if number != n:
+    #         result.append(number)
+    # return result
 
-
-
-
-
+    while n in numbers:
+        numbers.remove(n)
         
+    return numbers
+  
 
 # merge() accepts two *pre-sorted* lists of integers and returns a new *sorted* list.
 # WARNING do not assume lists are of equal length!
@@ -44,6 +44,8 @@ def remove(numbers: list[int], n: int) -> list[int]:
 def merge(first: list[int], second: list[int]) -> list[int]:
     # TODO implement
     # HINT use list.sort()
+    
+
     return []
 
 # round_up() accepts a list of *non-negative* floats and returns a list of
@@ -65,4 +67,7 @@ def evens_only(numbers: list[int]) -> list[int]:
 # ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
 def last_of_four_digits(numbers: list[int]) -> list[int]:
     # TODO implement
-    return []
+    result =[]
+    for number in numbers:
+        result.append(number % 10)
+    return result
