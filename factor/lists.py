@@ -1,9 +1,12 @@
 
 # summation() accepts a list of integers and returns the sum of all numbers within.
-# ex: [0, 2, -1, 15] -> 16
+# ex: [0, 2, -1, 15] = -> 16
 def summation(numbers: list[int]) -> int:
     # TODO implement
-    return 0
+    sum = 0
+    for number in numbers:
+        sum += number
+    return sum
 
 # find_negative() accepts a list of integers containing one negative number
 # and returns the *position* of the negative number. You may safely assume
@@ -11,13 +14,17 @@ def summation(numbers: list[int]) -> int:
 # ex: [11, 13, -1, 0, 9] -> 2
 def find_negative(numbers: list[int]) -> int:
     # TODO implement
-    return 0
+    for index in range(len(numbers)):
+        if numbers[index] < 0:
+            return index
 
 # remove() accepts a list of integers and an int n. The method removes *all instances*
 # of n from the provided list and returns a new list with no instances of n.
 # ex: [0, 1, 1, 2, 2, 3], n = 2 -> [0, 1, 1, 3]
 def remove(numbers: list[int], n: int) -> list[int]:
     # TODO implement
+    numbers.remove(2) 
+
     return []
 
 # merge() accepts two *pre-sorted* lists of integers and returns a new *sorted* list.
@@ -26,6 +33,7 @@ def remove(numbers: list[int], n: int) -> list[int]:
 def merge(first: list[int], second: list[int]) -> list[int]:
     # TODO implement
     # HINT use list.sort()
+    list.sort()
     return []
 
 # round_up() accepts a list of *non-negative* floats and returns a list of
@@ -33,6 +41,7 @@ def merge(first: list[int], second: list[int]) -> list[int]:
 # ex: [1.2, 3.5, 4.2, 0.0] -> [1, 4, 4, 0]
 def round_up(floats: list[float]) -> list[int]:
     # TODO implement
+    
     return []
 
 # evens_only() accepts a list of integers and returns a new list containing
@@ -40,6 +49,7 @@ def round_up(floats: list[float]) -> list[int]:
 # ex: [3, 4, 7, 8, 12] -> [4, 8, 12]
 def evens_only(numbers: list[int]) -> list[int]:
     # TODO implement
+
     return []
 
 # last_of_four_digits() accepts a list of four-digit integers and returns a new
@@ -47,4 +57,5 @@ def evens_only(numbers: list[int]) -> list[int]:
 # ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
 def last_of_four_digits(numbers: list[int]) -> list[int]:
     # TODO implement
+    numbers % 10 
     return []
