@@ -1,9 +1,15 @@
 
 # summation() accepts a list of integers and returns the sum of all numbers within.
 # ex: [0, 2, -1, 15] -> 16
+from operator import index
+
+
 def summation(numbers: list[int]) -> int:
     # TODO implement
-    return 0
+    sum = 0
+    for number in numbers:
+        sum += number
+    return sum    
 
 # find_negative() accepts a list of integers containing one negative number
 # and returns the *position* of the negative number. You may safely assume
@@ -11,6 +17,11 @@ def summation(numbers: list[int]) -> int:
 # ex: [11, 13, -1, 0, 9] -> 2
 def find_negative(numbers: list[int]) -> int:
     # TODO implement
+    i = 0
+    while i < len(numbers):
+        if numbers[i] < 0:
+            return i
+        i+=1
     return 0
 
 # remove() accepts a list of integers and an int n. The method removes *all instances*
@@ -18,7 +29,30 @@ def find_negative(numbers: list[int]) -> int:
 # ex: [0, 1, 1, 2, 2, 3], n = 2 -> [0, 1, 1, 3]
 def remove(numbers: list[int], n: int) -> list[int]:
     # TODO implement
-    return []
+
+    while n in numbers:
+        numbers.remove(n)
+    return numbers
+
+    # result = []
+    # for number in numbers:
+    #     if number != n:
+    #         result.append(number)
+    # return result
+
+    # i = 0
+    # while i < len(numbers):
+    #     if numbers[i] != n:
+    #         numbers.append(numbers[i])
+    #     i+=1
+    # return numbers
+
+    # i=0
+    # while i<len(numbers):
+    #     if numbers[i]==n:
+    #         return numbers.remove(numbers[i])
+    #     i += 1
+    # return 0
 
 # merge() accepts two *pre-sorted* lists of integers and returns a new *sorted* list.
 # WARNING do not assume lists are of equal length!
@@ -47,4 +81,5 @@ def evens_only(numbers: list[int]) -> list[int]:
 # ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
 def last_of_four_digits(numbers: list[int]) -> list[int]:
     # TODO implement
+    # number % 10 = last digit
     return []
