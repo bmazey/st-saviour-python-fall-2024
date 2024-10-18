@@ -32,14 +32,22 @@ def remove(numbers: list[int], n: int) -> list[int]:
 def merge(first: list[int], second: list[int]) -> list[int]:
     # TODO implement
     # HINT use list.sort()
-    return []
+    for number in second: 
+        first.append(number)
+    first. sort()
+    return first
+
+    
 
 # round_up() accepts a list of *non-negative* floats and returns a list of
 # rounded integers. Floats are rounded up iff the decimal is >= 0.5.
 # ex: [1.2, 3.5, 4.2, 0.0] -> [1, 4, 4, 0]
 def round_up(floats: list[float]) -> list[int]:
     # TODO implement
-    return []
+    return [int(number)] + (1 if number % 1 )
+
+
+    
 
 # evens_only() accepts a list of integers and returns a new list containing
 # only the even numbers found in the provided list, in their original order.
@@ -55,5 +63,5 @@ def last_of_four_digits(numbers: list[int]) -> list[int]:
     # TODO implement
     result =[]
     for number in numbers:
-        result .append(number )
-    return []
+        result .append(number % 10)
+    return result
