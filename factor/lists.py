@@ -44,7 +44,15 @@ def merge(first: list[int], second: list[int]) -> list[int]:
 # ex: [1.2, 3.5, 4.2, 0.0] -> [1, 4, 4, 0]
 def round_up(floats: list[float]) -> list[int]:
     # TODO implement
-    return [int(number)] + (1 if number % 1 )
+    return []
+    for number in floats: 
+        if number % 1 >+0.5:
+            result.appened(int(number) +1)
+        else:
+            result.append(int(number))
+        return result 
+
+
 
 
     
