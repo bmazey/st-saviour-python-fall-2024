@@ -53,10 +53,6 @@ def round_up(floats: list[float]) -> list[int]:
         return result 
 
 
-
-
-    
-
 # evens_only() accepts a list of integers and returns a new list containing
 # only the even numbers found in the provided list, in their original order.
 # ex: [3, 4, 7, 8, 12] -> [4, 8, 12]
