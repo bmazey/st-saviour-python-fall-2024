@@ -26,11 +26,11 @@ def find_negative(numbers: list[int]) -> int:
 # ex: [0, 1, 1, 2, 2, 3], n = 2 -> [0, 1, 1, 3]
 def remove(numbers: list[int], n: int) -> list[int]:
     # TODO implement
-    results = []
+    result = []
     for number in numbers:
-        if numbers /= n:
-    
-    return []
+        if number != n:
+            result.append(number)
+    return result
 
 # merge() accepts two *pre-sorted* lists of integers and returns a new *sorted* list.
 # WARNING do not assume lists are of equal length!
@@ -38,25 +38,41 @@ def remove(numbers: list[int], n: int) -> list[int]:
 def merge(first: list[int], second: list[int]) -> list[int]:
     # TODO implement
     # HINT use list.sort()
-    return []
-
+    for number in second:
+        first.append(number)
+    first.sort()
+    return first
+ 
 # round_up() accepts a list of *non-negative* floats and returns a list of
 # rounded integers. Floats are rounded up iff the decimal is >= 0.5.
 # ex: [1.2, 3.5, 4.2, 0.0] -> [1, 4, 4, 0]
 def round_up(floats: list[float]) -> list[int]:
     # TODO implement
-    return []
+    result = []
+    for number in floats:
+        if number % 1 >= .5:
+            result.append(int(number)+1) 
+        else:
+            result.append(int(number))
+    return result
 
 # evens_only() accepts a list of integers and returns a new list containing
 # only the even numbers found in the provided list, in their original order.
 # ex: [3, 4, 7, 8, 12] -> [4, 8, 12]
 def evens_only(numbers: list[int]) -> list[int]:
     # TODO implement
-    return []
+    result = []
+    for number in numbers:
+        if number % 2 == 0:
+            result.append(number)
+    return result
 
 # last_of_four_digits() accepts a list of four-digit integers and returns a new
 # list containing only the last digit of each number in the original sequence.
 # ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
 def last_of_four_digits(numbers: list[int]) -> list[int]:
     # TODO implement
-    return []
+    digits = []
+    for number in numbers:
+        digits.append(number % 10)
+    return digits
