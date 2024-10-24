@@ -87,7 +87,7 @@ def evens_only(numbers: list[int]) -> list[int]:
 # ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
 def last_of_four_digits(numbers: list[int]) -> list[int]:
     # TODO implement
-    # nned to know .append is a function and has its own meaning 
+    # nned to know .append is a function and has its own meaning fv 
     result =[]
     for number in numbers:
         result.append(number % 10)
