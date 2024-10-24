@@ -6,4 +6,8 @@
 # ex: n = 6 -> 8
 def sequence(n: int) -> int:
     # TODO implement
-    return 0
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    return sequence(n-1)+sequence(n-2)
