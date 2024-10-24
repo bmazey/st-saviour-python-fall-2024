@@ -1,7 +1,7 @@
 
 
 def factorial(n: int) -> int:
-    # TODO implement for +10 bonus
+    # sets up a factorial
     index = 1
     product = 1
     while index <= n:
@@ -10,5 +10,5 @@ def factorial(n: int) -> int:
     return product
 
 def choose(n: int, k: int) -> int:
-    # TODO implement for +10 bonus
+    # does that complicated equation to find possibilities (in a sense)
     return factorial(n)/(factorial(k)*factorial(n-k))
