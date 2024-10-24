@@ -75,6 +75,7 @@ def round_up(floats: list[float]) -> list[int]:
 # ex: [3, 4, 7, 8, 12] -> [4, 8, 12]
 def evens_only(numbers: list[int]) -> list[int]:
     # TODO implement
+    # need to figure out what to put in the list
     result = []
     for number in numbers:
         if number % 2 == 0:
@@ -86,6 +87,7 @@ def evens_only(numbers: list[int]) -> list[int]:
 # ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
 def last_of_four_digits(numbers: list[int]) -> list[int]:
     # TODO implement
+    # nned to know .append is a function and has its own meaning 
     result =[]
     for number in numbers:
         result.append(number % 10)

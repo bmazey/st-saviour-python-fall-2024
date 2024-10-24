@@ -6,6 +6,7 @@
 # ex: n = 6 -> 8
 def sequence(n: int) -> int:
     # TODO implement
+    # need to figure out the name of the list
     if n == 0:
         return 0
     if n == 1:
