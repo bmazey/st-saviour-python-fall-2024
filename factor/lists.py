@@ -44,13 +44,13 @@ def merge(first: list[int], second: list[int]) -> list[int]:
 # ex: [1.2, 3.5, 4.2, 0.0] -> [1, 4, 4, 0]
 def round_up(floats: list[float]) -> list[int]:
     # TODO implement
-    return []
+    result = []
     for number in floats: 
-        if number % 1 >+0.5:
-            result.appened(int(number) +1)
+        if number % 1 >= 0.5:
+            result.append(int(number) +1)
         else:
             result.append(int(number))
-        return result 
+    return result 
 
 
 # evens_only() accepts a list of integers and returns a new list containing
@@ -58,7 +58,14 @@ def round_up(floats: list[float]) -> list[int]:
 # ex: [3, 4, 7, 8, 12] -> [4, 8, 12]
 def evens_only(numbers: list[int]) -> list[int]:
     # TODO implement
-    return []
+    result = []
+    for number in numbers:
+        if number % 2 == 0:
+            result.append(number)
+    return result
+
+
+
 
 # last_of_four_digits() accepts a list of four-digit integers and returns a new
 # list containing only the last digit of each number in the original sequence.
