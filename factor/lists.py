@@ -21,8 +21,8 @@ def find_negative(numbers: list[int]) -> int:
     while i < len(numbers):
         if numbers[i] < 0:
             return i
-        i+=1
-    return 0
+        i += 1
+    return -1
 
 # remove() accepts a list of integers and an int n. The method removes *all instances*
 # of n from the provided list and returns a new list with no instances of n.
@@ -30,15 +30,15 @@ def find_negative(numbers: list[int]) -> int:
 def remove(numbers: list[int], n: int) -> list[int]:
     # TODO implement
 
-    while n in numbers:
-        numbers.remove(n)
-    return numbers
+    # while n in numbers:
+    #     numbers.remove(n)
+    # return numbers
 
-    # result = []
-    # for number in numbers:
-    #     if number != n:
-    #         result.append(number)
-    # return result
+    result = []
+    for number in numbers:
+        if number != n:
+            result.append(number)
+    return result
 
     # i = 0
     # while i < len(numbers):
@@ -59,15 +59,23 @@ def remove(numbers: list[int], n: int) -> list[int]:
 # ex: [0, 2, 4, 8] + [1, 3, 5] -> [0, 1, 2, 3, 4, 5, 8]
 def merge(first: list[int], second: list[int]) -> list[int]:
     # TODO implement
-    # HINT use list.sort()
-    return []
+    for number in second:
+        first.append(number)
+    first.sort()
+    return first
 
 # round_up() accepts a list of *non-negative* floats and returns a list of
 # rounded integers. Floats are rounded up iff the decimal is >= 0.5.
 # ex: [1.2, 3.5, 4.2, 0.0] -> [1, 4, 4, 0]
 def round_up(floats: list[float]) -> list[int]:
     # TODO implement
-    return []
+    round = []
+    for number in floats:
+        if number % 1 >= 0.5:
+            round.append(int(number)+1)
+        else:
+            round.append(int(number))
+    return round
 
 # evens_only() accepts a list of integers and returns a new list containing
 # only the even numbers found in the provided list, in their original order.
@@ -82,4 +90,7 @@ def evens_only(numbers: list[int]) -> list[int]:
 def last_of_four_digits(numbers: list[int]) -> list[int]:
     # TODO implement
     # number % 10 = last digit
-    return []
+    result = []
+    for number in numbers:
+        result.append(number%10)
+    return result
