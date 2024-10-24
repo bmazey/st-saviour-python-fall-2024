@@ -8,3 +8,4 @@ def test_factorial():
 def test_choose():
     # TODO implement for +10 bonus
     assert choose(5,2) == 10
+    assert choose(6,3) == 20
