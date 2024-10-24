@@ -1,50 +1,55 @@
-
-# summation() accepts a list of integers and returns the sum of all numbers within.
-# ex: [0, 2, -1, 15] -> 16
 def summation(numbers: list[int]) -> int:
-    # TODO implement
-    return 0
+    # slime rancher (adds everything in list "numbers" together and gives what that sum is)
+    sum = 0
+    for number in numbers:
+        sum += number
+    return sum
 
-# find_negative() accepts a list of integers containing one negative number
-# and returns the *position* of the negative number. You may safely assume
-# the provided list contains only a single negative number.
-# ex: [11, 13, -1, 0, 9] -> 2
 def find_negative(numbers: list[int]) -> int:
-    # TODO implement
-    return 0
+    # frostpunk thermometer simulator (finds a negative number and displays it. if there isn't a negative number in the list, it resorts to showing -1)
+    i = 0
+    while i < len(numbers):
+       if numbers[i] < 0:
+           return i
+       i += 1
+    return -1
 
-# remove() accepts a list of integers and an int n. The method removes *all instances*
-# of n from the provided list and returns a new list with no instances of n.
-# ex: [0, 1, 1, 2, 2, 3], n = 2 -> [0, 1, 1, 3]
 def remove(numbers: list[int], n: int) -> list[int]:
-    # TODO implement
-    return []
+    # calls a hitman on "n" (takes every number that isn't "n" and moves it to a separate list, and displays that separate list)
+    result = []
+    for number in numbers:
+        if number != n:
+            result.append(number)
+    return result
 
-# merge() accepts two *pre-sorted* lists of integers and returns a new *sorted* list.
-# WARNING do not assume lists are of equal length!
-# ex: [0, 2, 4, 8] + [1, 3, 5] -> [0, 1, 2, 3, 4, 5, 8]
 def merge(first: list[int], second: list[int]) -> list[int]:
-    # TODO implement
-    # HINT use list.sort()
-    return []
-
-# round_up() accepts a list of *non-negative* floats and returns a list of
-# rounded integers. Floats are rounded up iff the decimal is >= 0.5.
-# ex: [1.2, 3.5, 4.2, 0.0] -> [1, 4, 4, 0]
+    # creates a power rangers megazord (takes list "first" and list "second", shoves all the numbers into "first", and sorts the numbers in order)
+    for number in second:
+        first.append(number)
+    first.sort()
+    return first
+ 
 def round_up(floats: list[float]) -> list[int]:
-    # TODO implement
-    return []
+    # cowboy's gambit (similar code to "rounder" in the interview lab- takes a number, turns it into an integer, and adds one if the remainder's greater than five)
+    result = []
+    for number in floats:
+        if number % 1 >= .5:
+            result.append(int(number)+1) 
+        else:
+            result.append(int(number))
+    return result
 
-# evens_only() accepts a list of integers and returns a new list containing
-# only the even numbers found in the provided list, in their original order.
-# ex: [3, 4, 7, 8, 12] -> [4, 8, 12]
 def evens_only(numbers: list[int]) -> list[int]:
-    # TODO implement
-    return []
+    # sends odd numbers to hell before they die (only displays numbers that can be cleanly divised by 2, i.e. even numbers)
+    result = []
+    for number in numbers:
+        if number % 2 == 0:
+            result.append(number)
+    return result
 
-# last_of_four_digits() accepts a list of four-digit integers and returns a new
-# list containing only the last digit of each number in the original sequence.
-# ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
 def last_of_four_digits(numbers: list[int]) -> list[int]:
-    # TODO implement
-    return []
+    # steals your parents' credit card (displays placement of a number [specifically the tens place])
+    digits = []
+    for number in numbers:
+        digits.append(number % 10)
+    return digits
