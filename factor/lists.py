@@ -1,6 +1,7 @@
 
 # summation() accepts a list of integers and returns the sum of all numbers within.
 # ex: [0, 2, -1, 15] -> 16
+# add all the numbers in the list togther 
 def summation(numbers: list[int]) -> int:
     sum = 0
     for number in numbers:
@@ -13,6 +14,7 @@ def summation(numbers: list[int]) -> int:
 # ex: [11, 13, -1, 0, 9] -> 2
 def find_negative(numbers: list[int]) -> int:
     # TODO implement
+    # index means postion 
     for index in range(len(numbers)):
         if numbers[index] < 0:
             return index
@@ -22,6 +24,7 @@ def find_negative(numbers: list[int]) -> int:
 # ex: [0, 1, 1, 2, 2, 3], n = 2 -> [0, 1, 1, 3]
 def remove(numbers: list[int], n: int) -> list[int]:
     # TODO implement
+    #remove a number off the list 
      while n in numbers:
          numbers. remove(n)
      return numbers
@@ -32,6 +35,7 @@ def remove(numbers: list[int], n: int) -> list[int]:
 def merge(first: list[int], second: list[int]) -> list[int]:
     # TODO implement
     # HINT use list.sort()
+    #append meaning to add a single item to certain collection types
     for number in second: 
         first.append(number)
     first. sort()
@@ -44,6 +48,7 @@ def merge(first: list[int], second: list[int]) -> list[int]:
 # ex: [1.2, 3.5, 4.2, 0.0] -> [1, 4, 4, 0]
 def round_up(floats: list[float]) -> list[int]:
     # TODO implement
+    #if it's bigger than 0.5 round up
     result = []
     for number in floats: 
         if number % 1 >= 0.5:
@@ -58,6 +63,7 @@ def round_up(floats: list[float]) -> list[int]:
 # ex: [3, 4, 7, 8, 12] -> [4, 8, 12]
 def evens_only(numbers: list[int]) -> list[int]:
     # TODO implement
+    #if it's 0 it doesnt have a remainder
     result = []
     for number in numbers:
         if number % 2 == 0:
@@ -72,6 +78,7 @@ def evens_only(numbers: list[int]) -> list[int]:
 # ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
 def last_of_four_digits(numbers: list[int]) -> list[int]:
     # TODO implement
+    # need to know the last 4 digits of each number in the original sequence
     result =[]
     for number in numbers:
         result .append(number % 10)
