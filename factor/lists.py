@@ -3,6 +3,7 @@
 # ex: [0, 2, -1, 15] -> 16
 def summation(numbers: list[int]) -> int:
     # TODO implement
+    #set sum equal to 0 so that the list start at a right position
     sum = 0
     for number in numbers:
         sum += number
@@ -16,6 +17,7 @@ def summation(numbers: list[int]) -> int:
 # ex: [11, 13, -1, 0, 9] -> 2
 def find_negative(numbers: list[int]) -> int:
     # TODO implement
+    # know that we have to put an empety string if you do the while loop
     for index in range(len(numbers)) :
         if numbers [index] < 0 :
            return index    
@@ -29,8 +31,9 @@ def remove(numbers: list[int], n: int) -> list[int]:
     # result = []
     # for number in numbers:
     #     if number != n:
-    #         result.append(number)
+    #         number.append(result)
     # return result
+    # know that n means number not position
 
     while n in numbers:
         numbers.remove(n)
@@ -44,6 +47,11 @@ def remove(numbers: list[int], n: int) -> list[int]:
 def merge(first: list[int], second: list[int]) -> list[int]:
     # TODO implement
     # HINT use list.sort()
+    # know the what does fuction do-smallest to greatest in the list
+    for number in second:
+        first.append(number)
+    first.sort()
+    return first
     
 
     return []
@@ -53,14 +61,25 @@ def merge(first: list[int], second: list[int]) -> list[int]:
 # ex: [1.2, 3.5, 4.2, 0.0] -> [1, 4, 4, 0]
 def round_up(floats: list[float]) -> list[int]:
     # TODO implement
-    return []
+    # know that we could go striaght up to put equation in a function
+    result = []
+    for number in floats:
+        if number % 1 >= 0.5:
+            result.append(int(number) + 1)
+        else:
+            result.append(int(number))
+    return result
 
 # evens_only() accepts a list of integers and returns a new list containing
 # only the even numbers found in the provided list, in their original order.
 # ex: [3, 4, 7, 8, 12] -> [4, 8, 12]
 def evens_only(numbers: list[int]) -> list[int]:
     # TODO implement
-    return []
+    result = []
+    for number in numbers:
+        if number % 2 == 0:
+            result.append(number)
+    return result
 
 # last_of_four_digits() accepts a list of four-digit integers and returns a new
 # list containing only the last digit of each number in the original sequence.
