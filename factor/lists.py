@@ -82,7 +82,13 @@ def round_up(floats: list[float]) -> list[int]:
 # ex: [3, 4, 7, 8, 12] -> [4, 8, 12]
 def evens_only(numbers: list[int]) -> list[int]:
     # TODO implement
-    return []
+    i = 0
+    result = []
+    while i < len(numbers):
+        if numbers[i] % 2 == 0:
+            result.append(numbers[i])
+        i += 1
+    return result
 
 # last_of_four_digits() accepts a list of four-digit integers and returns a new
 # list containing only the last digit of each number in the original sequence.
