@@ -3,6 +3,7 @@
 # ex: [0, 2, -1, 15] -> 16
 def summation(numbers: list[int]) -> int:
     # TODO implement
+    # relates to zero when it goes to positive and negative number
     sum=0 
     for number in numbers:
          sum += number
@@ -14,44 +15,65 @@ def summation(numbers: list[int]) -> int:
 # ex: [11, 13, -1, 0, 9] -> 2
 def find_negative(numbers: list[int]) -> int:
     # TODO implement
+    #the list that is given a give a list of negative numbers
     for index in range (len(numbers)):
-    if numbers [index] < 0 :
-     return index
+      if numbers [index] < 0 :
+       return index
 
 # remove() accepts a list of integers and an int n. The method removes *all instances*
 # of n from the provided list and returns a new list with no instances of n.
 # ex: [0, 1, 1, 2, 2, 3], n = 2 -> [0, 1, 1, 3]
 def remove(numbers: list[int], n: int) -> list[int]:
     # TODO implement
-    return []
+    #code to take out a certain number out of a number list
+    while n in numbers: 
+        numbers.remove(n)
+    return numbers
+
 
 # merge() accepts two *pre-sorted* lists of integers and returns a new *sorted* list.
 # WARNING do not assume lists are of equal length!
 # ex: [0, 2, 4, 8] + [1, 3, 5] -> [0, 1, 2, 3, 4, 5, 8]
 def merge(first: list[int], second: list[int]) -> list[int]:
     # TODO implement
-    # HINT use list.sort()
-    return []
+    #Mix numbers that are odd but in order
+    for number in second:
+      first. append(number)
+    first.sort()
+    return first
 
 # round_up() accepts a list of *non-negative* floats and returns a list of
 # rounded integers. Floats are rounded up iff the decimal is >= 0.5.
 # ex: [1.2, 3.5, 4.2, 0.0] -> [1, 4, 4, 0]
 def round_up(floats: list[float]) -> list[int]:
     # TODO implement
-    return []
+    #reuslt t the decimal number leading to a greater and whole number
+    result = [] 
+    for number in floats:
+        if number % 1 >=0.5:
+            result.append(int(number) +1)
+        else:
+            result.append(int(number))
+    return result
 
 # evens_only() accepts a list of integers and returns a new list containing
 # only the even numbers found in the provided list, in their original order.
 # ex: [3, 4, 7, 8, 12] -> [4, 8, 12]
 def evens_only(numbers: list[int]) -> list[int]:
     # TODO implement
-    return []
+    #odd numbers are not allow only even will be on the list
+    result = []
+    for number in numbers:
+        if number % 2 ==0:
+            result.append(number)
+    return result
 
 # last_of_four_digits() accepts a list of four-digit integers and returns a new
 # list containing only the last digit of each number in the original sequence.
 # ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
 def last_of_four_digits(numbers: list[int]) -> list[int]:
     # TODO implement
+    #random number but the only numbers that matters is the last digit 
     result = []
     for number in numbers:
         result.append (number % 10)
