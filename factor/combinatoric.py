@@ -4,7 +4,7 @@
 # from factor.combinatoric import factorial
 
 def factorial(n: int) -> int:
-    # TODO implement for +10 bonus
+    # uses a while loop to multiply all numbers that are greater than 0 and less than/equal to n, stores that product in the variable num, and then returns num
     num = 1
     i = 1
     while i <= n:
@@ -12,15 +12,7 @@ def factorial(n: int) -> int:
         i += 1
     return num
 
-    # if n == 1:
-    #   return 1
-    # return n * factorial(n-1)
-
-    # return 0
-
 def choose(n: int, k: int) -> int:
-    # TODO implement for +10 bonus
-
+    # uses comination formula to find and return the number of possible combinations
     result = factorial(n) / (factorial(k) * factorial(n-k))
-
     return result

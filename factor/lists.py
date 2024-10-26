@@ -18,7 +18,7 @@ def summation(numbers: list[int]) -> int:
 def find_negative(numbers: list[int]) -> int:
     # starts from 0
     i = 0
-    # finds number that is negative and returns its positon
+    # finds number that is less than 0 and returns its positon
     while i < len(numbers):
         if numbers[i] < 0:
             return i
