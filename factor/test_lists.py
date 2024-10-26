@@ -13,7 +13,6 @@ def test_find_negative():
 
     second = [-1, 0, 0, 0]
     assert lists.find_negative(second) == 0
-
 def test_remove():
     n = 0
     first = [0, 1, 1, 0, 0, 1]
