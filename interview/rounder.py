@@ -2,10 +2,14 @@
 
 def round(number: float) -> int:
     """
-    round accepts a float and returns a rounded integer.
+    round() accepts a float and returns a rounded integer.
     the number is rounded up iff the decimal is >= .5
     """
 
     # TODO implement round function
-
-    return 0
+    if number % 1 >= .5:
+        # int(number)
+        return int(number)+1
+    if number % 1 < .5:
+        int(number)
+        return int(number)
