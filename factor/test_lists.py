@@ -93,3 +93,4 @@ def test_last_of_four_digits():
     assert result[2] == 6
     assert result[3] == 0
     assert len(result) == 4
+    
