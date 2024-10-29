@@ -1,4 +1,7 @@
+def least(numbers: list[int]) -> int:
+    small = 100
+    for number in numbers:
+        if number < small:
+            small = number
+    return small
 
-if __name__ == '__main__':
-    # this file is provided for experimentation purposes
-    print('new dawn, new day')
