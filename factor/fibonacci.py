@@ -4,6 +4,10 @@
 # Recall the fibonacci sequence is defined as follows ...
 # 0, 1, 1, 2, 3, 5, 8 ...
 # ex: n = 6 -> 8
-def sequence(n: int) -> int:
-    # TODO implement
-    return 0
+def sequence(n:int) -> int: 
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    return sequence(n - 1) + sequence(n - 2)
+ 
