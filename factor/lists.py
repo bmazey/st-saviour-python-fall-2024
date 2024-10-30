@@ -35,7 +35,7 @@ def remove(numbers: list[int], n: int) -> list[int]:
 def merge(first: list[int], second: list[int]) -> list[int]:
     # TODO implement
     # HINT use list.sort()
-    #append meaning to add a single item to certain collection types
+    # append meaning to add a single item to certain collection types
     for number in second: 
         first.append(number)
     first. sort()
@@ -48,7 +48,7 @@ def merge(first: list[int], second: list[int]) -> list[int]:
 # ex: [1.2, 3.5, 4.2, 0.0] -> [1, 4, 4, 0]
 def round_up(floats: list[float]) -> list[int]:
     # TODO implement
-    #if it's bigger than 0.5 round up
+    # if it's bigger than 0.5 round up
     result = []
     for number in floats: 
         if number % 1 >= 0.5:

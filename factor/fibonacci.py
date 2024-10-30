@@ -6,7 +6,7 @@
 # ex: n = 6 -> 8
 def sequence(n: int) -> int:
     # TODO implement
-    #n minus a number is the postion 
+    # n minus a number is the postion 
     if n==0: 
         return 0
     if n==1:
