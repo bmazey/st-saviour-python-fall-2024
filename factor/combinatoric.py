@@ -7,10 +7,9 @@ def factorial(n: int) -> int:
     while i <= n:
         result *= i 
         i += 1 
-        return result 
+    return result 
 
 
 def choose(n: int, k: int) -> int:
     # TODO implement for +10 bonus
-    result = factorial(n) / (factorial(n-k))
-    return 0
+    return factorial(n) / (factorial(k)* factorial(n-k)) 
