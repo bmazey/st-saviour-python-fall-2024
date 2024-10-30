@@ -54,8 +54,6 @@ def round_up(floats: list[float]) -> list[int]:
             result.append(int(number))
     return result 
     
-
-
 # evens_only() accepts a list of integers and returns a new list containing
 # only the even numbers found in the provided list, in their original order.
 # ex: [3, 4, 7, 8, 12] -> [4, 8, 12]
@@ -78,5 +76,3 @@ def last_of_four_digits(numbers: list[int]) -> list[int]:
     for number in numbers:
         result.append(number % 10)
     return result 
-
-
