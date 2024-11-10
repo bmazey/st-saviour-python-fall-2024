@@ -2,8 +2,10 @@
 # summation() accepts a list of integers and returns the sum of all numbers within.
 # ex: [0, 2, -1, 15] -> 16
 def summation(numbers: list[int]) -> int:
-    # TODO implement
-    return 0
+    sum = 0
+    for number in numbers:
+        sum += number
+    return sum
 
 # find_negative() accepts a list of integers containing one negative number
 # and returns the *position* of the negative number. You may safely assume
@@ -25,8 +27,11 @@ def remove(numbers: list[int], n: int) -> list[int]:
 # ex: [0, 2, 4, 8] + [1, 3, 5] -> [0, 1, 2, 3, 4, 5, 8]
 def merge(first: list[int], second: list[int]) -> list[int]:
     # TODO implement
+    for number in second:
+        first.append(number)
     # HINT use list.sort()
-    return []
+    first.sort()
+    return first
 
 # round_up() accepts a list of *non-negative* floats and returns a list of
 # rounded integers. Floats are rounded up iff the decimal is >= 0.5.
