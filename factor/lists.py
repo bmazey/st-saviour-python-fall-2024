@@ -67,14 +67,15 @@ def evens_only(numbers: list[int]) -> list[int]:
         if number % 2 ==0:
             result.append(number)
     return result
+    
+    # last_of_four_digits() accepts a list of four-digit integers and returns a new 
+    # list containing only the last digit of each number in the original seqence. 
+    # ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
+    def last_of_four_digits(numbers: list[int]) -> list[int]:
+        # TODO implement 
+        #random number but he only numbers that matters is the last digit
+        result = []
+        for number in numbers:
+            result.append (number % 10)
+            return result
 
-# last_of_four_digits() accepts a list of four-digit integers and returns a new
-# list containing only the last digit of each number in the original sequence.
-# ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
-def last_of_four_digits(numbers: list[int]) -> list[int]:
-    # TODO implement
-    #random number but the only numbers that matters is the last digit 
-    result = []
-    for number in numbers:
-        result.append (number % 10)
-    return result
